@@ -1,0 +1,247 @@
+/* #region STRUCTURE */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #f0f0f0;
+    color: #1d1d1d;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+#wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    background-color: lightblue;
+}
+
+#container {
+    display: grid;
+    grid-template: repeat(7, minmax(50px, auto)) / repeat(12, 1fr);
+    grid-row-gap: 10px;
+    background-color: lightcoral;
+    width: 80%;
+
+    font-family: 'copy';
+    font-size: 1.6rem;
+}
+
+.border1 {
+    border: 2px solid rgb(145, 190, 131);
+}
+
+img {
+    width: 100%;
+}
+
+.circle {
+    clip-path: circle(50%);
+}
+
+/* #endregion */
+
+/* #region FONTS */
+
+@font-face {
+    font-family: 'headline';
+    src: url('/fonts/Oswald/Oswald-VariableFont:wght.ttf');
+}
+
+@font-face {
+    font-family: 'copy';
+    src: url('/fonts/Noto_Sans/NotoSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'script';
+    src: url('/fonts/RockSalt-Regular.ttf')
+}
+
+.menu li, h2 {
+    font-family: 'headline';
+    font-size: 2.4rem;
+}
+
+.script {
+    font-family: 'script';
+}
+
+/* #endregion */
+
+/* #region HEADER */
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: 1/1/2/3; 
+    background-color: #f0f0f0;
+}
+
+.logo img {
+    width: 100%;
+}
+
+/* #endregion */
+
+/* #region MENU */
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    grid-area: 1/8/2/13;
+    background-color: aliceblue;
+}
+
+.menu li {
+    display: inline-block;
+    margin-left: 3rem;
+}
+
+/* #endregion */
+
+/* #region INFO */
+
+.infotext {
+    grid-area: 2/4/3/10;
+
+    margin: 4rem auto;
+    background-color: antiquewhite;
+}
+
+.infotext p:first-child {
+    margin-bottom: 1rem;
+}
+
+table {
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+td {
+    width: 12rem;
+}
+
+/* #endregion */
+
+/* #region TOPIC CARDS */
+
+#card-group {
+    display: flex;
+    justify-content: space-evenly;
+    background-color:rgb(172, 187, 187);
+    grid-area: 3/1/4/13;
+}
+
+#card-group div {
+    width: 30%;
+}
+
+.card1 {
+    background-color:aliceblue;
+    order: 1;
+}
+
+.card2 {
+    background-color: antiquewhite;
+    order: 2;
+}
+
+.card3 {
+    background-color: aqua;
+    order: 3;
+}
+
+/* #endregion */
+
+/* #region TESTIMONIALS */
+
+.monial-text1 {
+    grid-area: 4/3/5/7;
+    background-color: lightgoldenrodyellow;
+}
+
+.monial-pic1 {
+    grid-area: 4/8/5/9;
+    background-color: lightgoldenrodyellow;
+
+    display: flex;
+    align-items: center;
+}
+
+.monial-text2 {
+    grid-area: 5/7/6/11;
+    background-color: lightgoldenrodyellow;
+}
+
+.monial-pic2 {
+    grid-area: 5/5/6/6;
+    background-color: lightgoldenrodyellow;
+}
+
+.monial-text3 {
+    grid-area: 6/3/7/7;
+    background-color: lightgoldenrodyellow;
+}
+
+.monial-pic3 {
+    grid-area: 6/8/7/9;
+    background-color: lightgoldenrodyellow;
+}
+
+/* #endregion */
+
+/* #region FOOTER */
+
+.footer {
+    grid-area: 7/1/8/13;
+    background-color:lightyellow;
+}
+
+.impressum {
+    grid-area: 7/2/8/4;
+    background-color: lightgray;
+}
+
+.contact {
+    grid-area: 7/10/8/12;
+    background-color: lightgreen;
+}
+
+/* #endregion */
+
+/* #region MOBILE */
+
+@media screen and (min-width: 375px) {
+
+    #wrapper {
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        background-color: lightblue;
+    }
+    
+    #container {
+        display: grid;
+        grid-template: repeat(7, minmax(50px, auto)) / repeat(12, 1fr);
+        grid-row-gap: 10px;
+        background-color: lightcoral;
+        width: 80%;
+    
+        font-family: 'copy';
+        font-size: 1.6rem;
+    }
+
+    
+
+}
+
+/* #endregion */

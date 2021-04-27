@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Falk Tennnstedt">
+    <meta name="description" content="My Portfolio">
+    <title></title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/css/styles-content.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="container">
+            <div class="logo">
+                <a href="/index.html"><img class="logo-pic" src="/img/logo-notatrend.png" alt="Company-logo for not a trend."></a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><i class="fas fa-chevron-circle-down"></i></li>
+                    <li><a href="/html/audio.html">Audio</a></li>
+                    <li><a href="/html/webdev.html">Web</a></li>
+                    <li><a href="/html/graphics.html">Graphics</a></li>
+                    <li><a href="/html/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <h2>Contact</h2>
+                <form action="">
+                    <label for="name" class="required">Whats your name?</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="eMail" class="required">Your eMail address?</label>
+                    <input type="email" id="eMail" name="email" required>
+
+                    <label for="phone">Your phone number</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}-[0-9]{3}" placeholder="aaaa-bb-cc-ddd">
+
+                    <label for="website">Website?</label>
+                    <input type="url" id="website" name="website" placeholder="https://example.com"
+                    pattern="https://.*" >
+
+                    <label for="media">Soundcloud / YouTube?</label>
+                    <input type="url" id="media" name="media" placeholder="https://example.com"
+                    pattern="https://.*" >
+                    
+                    <label for="comment" class="required">What can i do for you? :)</label>
+                    <textarea name="comment" id="comment" cols="33" rows="5"></textarea>
+                    
+                    <button type="submit">Send it!</button>
+                </form>                
+            </div>
+            <div class="footer">
+                <div>Impressum</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
